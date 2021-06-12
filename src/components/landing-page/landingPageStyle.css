@@ -38,7 +38,7 @@
     padding-top: 30px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: end;
+    /* justify-content: end; */
     margin-left: 5vh;
 }
 

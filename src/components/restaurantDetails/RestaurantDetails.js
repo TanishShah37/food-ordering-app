@@ -4,8 +4,6 @@ import swal from 'sweetalert'
 import './restaurantStyle.scss'
 import Dish from '../cart/Dish '
 
-let imageUrl =
-  'https://b.zmtcdn.com/data/res_imagery/307113_RESTAURANT_e2f599e624e5e8c01404af7608728671.jpg?output-format=webp'
 
 function RestaurantDetails (props) {
   const [resData, setData] = useState(null)

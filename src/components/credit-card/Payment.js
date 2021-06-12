@@ -26,8 +26,12 @@ const onSubmit = async (values) => {
 export const GetUid = (props) => {
   const params = useParams();
   useEffect(() => {
-    firebase.database().ref(params.firebaseUid).remove();
-  }, []);
+                    firebase
+                      .database()
+                      .ref(params.firebaseUid)
+                      .remove();
+                    // eslint-disable-next-line react-hooks/exhaustive-deps
+                  }, []);
 
   return <div></div>;
 };
