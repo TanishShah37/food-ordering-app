@@ -1,0 +1,223 @@
+.landing_page_main_container {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fdfdfd;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.landing_page_header_container {
+    /* width: 680px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.signUpLoginButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1em;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 30px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    margin-left: 5vh;
+}
+
+.signUpLoginButtons button {
+    border: none;
+    width: 90px;
+    height: 40px;
+    background-color: #f5b133;
+    border-radius: 3px;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.signUpLoginButtons button:focus {
+    outline: none;
+    border: 1px solid #f5b133;
+    -webkit-box-shadow: 0px 0px 2px 2px #f5b133;
+    box-shadow: 0px 0px 2px 2px #f5b133;
+}
+
+.signUpLoginButtons button:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.title {
+    text-align: center;
+    color: #f5b133;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 35px 0 30px 0;
+}
+
+.subTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f5b133;
+    font-family: system-ui;
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-align: center;
+}
+
+.landing_page_search_by_city_container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px 0;
+}
+
+.landing_page_search_by_city_container .nearMe {
+    background-color: #f5b133;
+    border-radius: 3px;
+    border-right: none;
+    width: 150px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px solid #f5b133;
+    color: white;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.landing_page_search_by_city_container .nearMe span {
+    margin-left: 1em;
+}
+
+.landing_page_search_by_city_container .nearMe:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+#citySearch {
+    width: 370px;
+    height: 45px;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #f5b133;
+    margin-right: 1vw;
+    padding-left: 1vw;
+}
+
+#citySearch:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 2px 2px #f5b133;
+    box-shadow: 0px 0px 2px 2px #f5b133;
+}
+
+#citySearchbtn {
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 5px;
+    width: 140px;
+    background-color: #f5b133;
+    color: white;
+    border: 1px solid #f5b133;
+    cursor: pointer;
+}
+
+#citySearchbtn:focus {
+    -webkit-box-shadow: 0px 0px 1px 1px #f5b133;
+    box-shadow: 0px 0px 1px 1px #f5b133;
+}
+
+#citySearchbtn:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 140px;
+    max-height: 300px;
+    margin-top: 10px;
+    border-radius: 3px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-items {
+    color: black;
+    padding: 12px;
+    text-align: center;
+    display: block;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.dropdown-content-items:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .nearMeArea {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #citySearch {
+        width: 200px;
+    }
+    #citySearchbtn {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #citySearch {
+        width: 160px;
+    }
+    #citySearchbtn {
+        width: 90px;
+    }
+}
+
+
+/*# sourceMappingURL=landingPageStyle.css.map */
